@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rus Knyazliklari vs Amir Temur Davlati</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: rgba(255,255,255,0.9);
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        .rus-card {
+            border-top: 5px solid #3498db;
+        }
+        .temur-card {
+            border-top: 5px solid #e74c3c;
+        }
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .period {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ecf0f1;
+            position: relative;
+            padding-left: 25px;
+        }
+        li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px;
+            text-align: left;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .comparison-table th {
+            background: #34495e;
+            color: white;
+            font-weight: 600;
+        }
+        .rus-col {
+            background: #ebf3fd;
+        }
+        .temur-col {
+            background: #fdf2f2;
+        }
+        .similarities {
+            background: #d5f4e6;
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #27ae60;
+        }
+        .differences {
+            background: #fef9e7;
+            margin-top: 20px;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #f39c12;
+        }
+        .highlight {
+            background: #ffd700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+        }
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            .comparison-table {
+                font-size: 0.9em;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚔️ Rus Knyazliklari vs Amir Temur ⚔️</h1>
+            <p class="subtitle">Markaziy feodallik davrlarining taqqoslash tahlili</p>
+        </header>
+
+        <div class="comparison-grid">
+            <div class="card rus-card">
+                <h2>🏰 Rus Knyazliklari</h2>
+                <div class="period">XII-XVI asrlar (Feodallik parchalanishi)</div>
+                <ul>
+                    <li>Kiev Rusining parchalanishi natijasida yuzaga keldi</li>
+                    <li>Moskva, Tver, Suzdal, Ryazan kabi mustaqil knyazliklar</li>
+                    <li>Oltin Oʻrda (Moʻgʻullar) zulmida boʻldi</li>
+                    <li>Ichki urushlar va knyazlar oʻrtasida raqobat</li>
+                    <li>Moskva knyazligi birlashish markazi boʻldi</li>
+                    <li>Ivanga pul toʻlash "yolk" tizimi</li>
+                    <li>Pravoslav cherkov kuchli taʼsir koʻrsatdi</li>
+                    <li>Xalqdan boy armiya (oprichnina) yaratildi</li>
+                </ul>
+            </div>
+
+            <div class="card temur-card">
+                <h2>🕌 Amir Temur Davlati</h2>
+                <div class="period">1370-1405 yillar (Temuriylar imperiyasi)</div>
+                <ul>
+                    <li>Amir Temur (Tamerlan) tomonidan asos solindi</li>
+                    <li>Markaziy Osiyo, Eron, Hindiston, Yaqin Sharq</li>
+                    <li>Tez surʼatda imperiya qurdi (35 yil ichida)</li>
+                    <li>34 ta katta yurish oʻtkazdi</li>
+                    <li>Samarqand - poytaxt, ilmiy-markaz</li>
+                    <li>Qattiq markazlashgan harbiy diktatura</li>
+                    <li>Islomiy qonunlar + shaxsiy qonunlar</li>
+                    <li>Millionlab odamlar oʻldirildi (terror siyosati)</li>
+                </ul>
+            </div>
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Jihatlar</th>
+                    <th class="rus-col">Rus Knyazliklari</th>
+                    <th class="temur-col">Amir Temur Davlati</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Davlat tuzilishi</strong></td>
+                    <td class="rus-col">Parchanlangan feodallik</td>
+                    <td class="temur-col"><span class="highlight">Markazlashgan imperiya</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Hokimiyat</strong></td>
+                    <td class="rus-col">Knyazlar kengashi, boyarlar</td>
+                    <td class="temur-col"><span class="highlight">Mutlaq monarxiya</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Armiya</strong></td>
+                    <td class="rus-col">Feodal lashkar, druzhina</td>
+                    <td class="temur-col"><span class="highlight">Professional doimiy armiya</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Iqtisodiyot</strong></td>
+                    <td class="rus-col">Qishloq xoʻjaligi</td>
+                    <td class="temur-col">Savdo + qishloq xoʻjaligi + hunarmandchilik</td>
+                </tr>
+                <tr>
+                    <td><strong>Din</strong></td>
+                    <td class="rus-col">Pravoslav xristianlik</td>
+                    <td class="temur-col"><span class="highlight">Sunnit islom</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Tashqi siyosat</strong></td>
+                    <td class="rus-col">Oltin Orda zulmida</td>
+                    <td class="temur-col"><span class="highlight">Fath yurishlari</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Poytaxt</strong></td>
+                    <td class="rus-col">Vladimir → Moskva</td>
+                    <td class="temur-col"><span class="highlight">Samarqand</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="similarities">
+            <h3>🟢 Oʻxshashliklar</h3>
+            <ul>
+                <li>Ikki tizim ham <strong>feodallik asosida</strong> qurilgan</li>
+                <li><strong>Harbiy kuchga</strong> tayanib rivojlandi</li>
+                <li>Din <strong>huiyati kuchaytirdi</strong></li>
+                <li><strong>Markazlashgan</strong> tendensiyalar kuzatildi</li>
+            </ul>
+        </div>
+
+        <div class="differences">
+            <h3>🔴 Asosiy farqlar</h3>
+            <ul>
+                <li>Rus: <strong>uzoq davom etgan parchalanish</strong> → <strong>sekin birlashish</strong></li>
+                <li>Temur: <strong>tez qurilgan imperiya</strong> → <strong>shaxsiy ixtisos</strong></li>
+                <li>Rus: <strong>defensive</strong> siyosat (Oltin Orda zulmida)</li>
+                <li>Temur: <strong>aggressive</strong> ekspansiya (34 yurish)</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2026 Tarixiy taqqoslash tahlili | Maʼlumotlar umumiy tarixiy faktlarga asoslangan</p>
+        </footer>
+    </div>
+</body>
+</html>
